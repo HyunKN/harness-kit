@@ -45,6 +45,14 @@ python .\scripts\new_issue.py "C:\path\to\target-repo" renderall-partial-refresh
 
 After that, open the target repository in Codex and use the installed docs structure and skills as your default workflow.
 
+If you are already inside Codex, just hand it off to Codex.
+
+Recommended prompts:
+
+- `Install harness-kit into this repository.`
+- `Install https://github.com/HyunKN/harness-kit into this repository and set it up for me.`
+- `Create a new issue doc for this repository. Title: Reduce full rerenders.`
+
 ## Core Flow
 
 1. Bootstrap a repository with the standard `docs/` harness.

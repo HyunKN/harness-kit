@@ -45,6 +45,14 @@ python .\scripts\new_issue.py "C:\path\to\target-repo" renderall-partial-refresh
 
 그 다음 대상 저장소를 Codex에서 열고, 설치된 docs 구조와 skills를 기본 작업 방식으로 사용하면 됩니다.
 
+이미 Codex 안에 있다면 그냥 Codex에게 맡기세요.
+
+추천 프롬프트:
+
+- `이 저장소에 harness-kit 설치해줘`
+- `https://github.com/HyunKN/harness-kit 를 이 저장소에 설치하고 세팅까지 해줘`
+- `이 저장소에 새 이슈 문서를 만들어줘. 제목은 Reduce full rerenders`
+
 ## 핵심 플로우
 
 1. 표준 `docs/` 하네스를 저장소에 설치합니다.
