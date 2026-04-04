@@ -45,7 +45,7 @@ python .\scripts\new_issue.py "C:\path\to\target-repo" renderall-partial-refresh
 
 After that, open the target repository in Codex and use the installed docs structure and skills as your default workflow.
 
-If you are already inside Codex, just hand it off to Codex.
+If you are already inside Codex, just hand it off to Codex!
 
 Recommended prompts:
 
