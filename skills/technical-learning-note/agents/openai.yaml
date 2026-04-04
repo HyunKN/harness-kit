@@ -1,0 +1,3 @@
+interface:
+  display_name: "Technical Learning Note"
+  short_description: "Write technical study notes that explain mechanisms, code, and tradeoffs."

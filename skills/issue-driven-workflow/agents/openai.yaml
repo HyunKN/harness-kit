@@ -1,0 +1,3 @@
+interface:
+  display_name: "Issue Driven Workflow"
+  short_description: "Run non-trivial implementation through issue docs and tracked validation."
