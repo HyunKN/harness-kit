@@ -14,7 +14,9 @@ Instead of jumping straight into code, the agent should begin from the project's
 2. `docs/README.md`
 3. `docs/issues/current_backlog.md`
 4. the issue document directly related to the current task
-5. the most relevant architecture / operations / playbook document for the task
+5. `docs/operations/strong_rules.md`
+6. `docs/troubleshooting/README.md`
+7. the most relevant architecture / operations / playbook document for the task
 
 ## Minimum Questions To Answer Before Coding
 
@@ -34,6 +36,7 @@ If these answers are not clear, the task should not be treated as “ready for i
 
 - Start from the repo's operating documents
 - Use the issue doc as the current source of scope
+- Read `strong_rules.md` before changing risky areas or patterns that have failed before
 - Re-check validation expectations before editing files
 - Prefer updating existing docs over creating near-duplicates
 
@@ -43,6 +46,7 @@ If these answers are not clear, the task should not be treated as “ready for i
 - Do not assume old context is still correct without checking docs
 - Do not change unrelated files just because they are nearby
 - Do not finish coding without updating the relevant issue or learning note
+- Do not store raw incidents in `learning/` if they should live in `troubleshooting/`
 
 ## What This Document Enables
 

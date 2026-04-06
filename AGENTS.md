@@ -28,7 +28,9 @@ When starting work here, use this order:
 3. `README.ko.md` when Korean context matters
 4. `assets/templates/docs/README.md`
 5. `assets/templates/docs/operations/agent_session_boot_protocol.md`
-6. `assets/templates/docs/playbooks/repo_hygiene_gc_loop.md`
+6. `assets/templates/docs/operations/strong_rules.md`
+7. `assets/templates/docs/troubleshooting/README.md`
+8. `assets/templates/docs/playbooks/repo_hygiene_gc_loop.md`
 
 Then open only the specific template or README that matches the task.
 
@@ -51,19 +53,39 @@ Then open only the specific template or README that matches the task.
 
 ## Core Operating Model
 
-This repository supports three layers:
+This repository supports four layers:
 
 1. `Session boot`
    - What Codex should read first
    - What should be checked before implementation
 
-2. `Failure and learning loop`
-   - How to record mistakes, regressions, and troubleshooting
-   - How to turn failures into reusable notes
+2. `Strong rules`
+   - What must not be repeated
+   - Which implementation patterns are non-negotiable
 
-3. `Repo hygiene / garbage collection loop`
+3. `Troubleshooting`
+   - How to record mistakes, regressions, symptoms, and fixes
+   - How to leave behind incident history that another agent can reuse
+
+4. `Repo hygiene / garbage collection loop`
    - How to review drift between docs and code
    - How to inspect rule violations, dead code, stale docs, and unused assets
+
+## Strong Rule Boundary
+
+Use `learning` for generalized technical understanding.
+
+Use `troubleshooting` for concrete incidents:
+
+- user-reported breakage
+- regression symptoms
+- runtime errors
+- confusing or misleading UX states
+
+Use `strong rules` when either of these is true:
+
+- the user explicitly says “do not do this again”
+- a mistake has already repeated or is expensive enough that repetition is unacceptable
 
 ## Important Constraint
 

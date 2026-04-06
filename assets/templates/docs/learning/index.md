@@ -9,3 +9,6 @@ Learning notes should explain:
 - what tradeoffs remain
 
 Do not use this folder for simple feature announcements.
+Do not use this folder as the primary home for raw incidents or user-reported breakage.
+
+Use `troubleshooting/` for concrete failures and `operations/strong_rules.md` for non-negotiable prevention rules.

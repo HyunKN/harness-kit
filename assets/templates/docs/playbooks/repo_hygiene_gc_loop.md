@@ -46,7 +46,7 @@ Check whether the repository has started to violate its own rules:
 
 - files edited without issue tracking
 - meaningful changes without validation notes
-- failures that were fixed but never captured as learning notes
+- failures that were fixed but never captured as troubleshooting notes
 - handoff-sensitive work with no durable record
 
 ### 3. Dead Or Unused Material
@@ -68,6 +68,11 @@ Look for:
 - the same naming or state-management mistake repeating
 
 If repetition appears, create or update a learning note or playbook instead of fixing the symptom only.
+If the pattern is concrete and recurrence-sensitive, add or update:
+
+- a troubleshooting note
+- a strong rule
+- and then a learning note only if the mechanism itself is worth studying
 
 ## Suggested Output
 

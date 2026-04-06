@@ -9,6 +9,7 @@ It gives you:
 - issue-first execution
 - a role-based `docs/` structure
 - a repo-local `AGENTS.md` entrypoint pattern
+- strong rules for “do this / do not do this” repository constraints
 - technical learning notes that explain how something was built
 - a failure / troubleshooting capture loop
 - a repo hygiene and garbage collection review loop
@@ -61,9 +62,10 @@ Recommended prompts:
 1. Bootstrap a repository with the standard `docs/` harness.
 2. Open a new issue before implementation starts.
 3. Implement against that issue instead of working from chat history alone.
-4. Capture technical learning notes for anything worth reusing or studying later.
-5. Use sub-agents only for bounded analysis, implementation, or review tasks.
-6. Run a repeatable hygiene pass so drift, stale docs, and dead material do not silently accumulate.
+4. Read strong rules before touching risky patterns or historically fragile areas.
+5. Capture troubleshooting notes for concrete failures and learning notes only for reusable technical understanding.
+6. Use sub-agents only for bounded analysis, implementation, or review tasks.
+7. Run a repeatable hygiene pass so drift, stale docs, and dead material do not silently accumulate.
 
 ## What You Get
 
@@ -79,6 +81,7 @@ The bootstrap script installs a pre-organized `docs/` tree with sections for:
 - issues
 - records
 - learning
+- troubleshooting
 - playbooks
 - operations
 
