@@ -8,7 +8,10 @@ It gives you:
 
 - issue-first execution
 - a role-based `docs/` structure
+- a repo-local `AGENTS.md` entrypoint pattern
 - technical learning notes that explain how something was built
+- a failure / troubleshooting capture loop
+- a repo hygiene and garbage collection review loop
 - reusable Codex skills for bootstrap, issue workflow, learning notes, and sub-agent usage
 
 ## Why use it
@@ -60,6 +63,7 @@ Recommended prompts:
 3. Implement against that issue instead of working from chat history alone.
 4. Capture technical learning notes for anything worth reusing or studying later.
 5. Use sub-agents only for bounded analysis, implementation, or review tasks.
+6. Run a repeatable hygiene pass so drift, stale docs, and dead material do not silently accumulate.
 
 ## What You Get
 
@@ -77,6 +81,8 @@ The bootstrap script installs a pre-organized `docs/` tree with sections for:
 - learning
 - playbooks
 - operations
+
+It can also be paired with a repo-local `AGENTS.md` so Codex has a clear “read this first” project entrypoint.
 
 ### 2. Codex skills
 
@@ -112,5 +118,22 @@ Harness Kit works best when:
 - you are using Codex regularly
 - you want the same workflow across multiple repositories
 - you care about explainability, handoff quality, and durable notes
+- you want repo hygiene and self-correction loops to be explicit instead of tribal knowledge
 
 It is not a build system, framework, or package manager. It is a workflow kit.
+
+## Manual vs Automatic
+
+Harness Kit defines the workflow in Markdown.
+
+That means it is very good at standardizing:
+
+- what to read first
+- how to open and track issues
+- how to record failures and learning
+- how to review drift and cleanup needs
+
+But fully automatic enforcement still requires executable tooling in the target repository.
+
+Use Harness Kit to define the loop first.  
+Then add scripts, lint, CI, or validators in the target repo if you want hard enforcement.

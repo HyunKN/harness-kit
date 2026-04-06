@@ -8,3 +8,4 @@ Examples:
 - issue execution rhythm
 - release procedure
 - design review loop
+- repo hygiene and garbage collection loop
