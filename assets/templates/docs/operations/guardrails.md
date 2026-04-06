@@ -1,9 +1,9 @@
-# Strong Rules
+# Guardrails
 
-Use this document for rules that should be treated as non-negotiable while working in a repository.
+Use this document for rules that should be read before coding in risky or historically fragile areas.
 
 These are not just “good ideas”.
-They are rules intended to prevent repeated mistakes, ignored user preferences, or expensive regressions.
+They are preventive guardrails intended to stop repeated mistakes, ignored user preferences, or expensive regressions before they happen again.
 
 ## What Belongs Here
 
@@ -28,23 +28,23 @@ Those belong in:
 
 ## Promotion Criteria
 
-Promote something into a strong rule when at least one of these is true:
+Promote something into a guardrail when at least one of these is true:
 
 1. The user explicitly said “do not do this again”.
 2. A mistake repeated.
 3. The cost of repeating the mistake is high enough that prevention should be explicit.
 4. A preferred technique or banned technique should override agent improvisation.
 
-## Suggested Rule Shape
+## Suggested Guardrail Shape
 
-For each strong rule, include:
+For each guardrail, include:
 
 1. the rule
 2. why it exists
 3. what to do instead
 4. how to validate compliance
 
-## Example Rule Format
+## Example Guardrail Format
 
 ```md
 ## Rule: Do not duplicate fallback logic

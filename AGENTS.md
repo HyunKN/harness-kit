@@ -28,7 +28,7 @@ When starting work here, use this order:
 3. `README.ko.md` when Korean context matters
 4. `assets/templates/docs/README.md`
 5. `assets/templates/docs/operations/agent_session_boot_protocol.md`
-6. `assets/templates/docs/operations/strong_rules.md`
+6. `assets/templates/docs/operations/guardrails.md`
 7. `assets/templates/docs/troubleshooting/README.md`
 8. `assets/templates/docs/playbooks/repo_hygiene_gc_loop.md`
 
@@ -59,9 +59,9 @@ This repository supports four layers:
    - What Codex should read first
    - What should be checked before implementation
 
-2. `Strong rules`
-   - What must not be repeated
-   - Which implementation patterns are non-negotiable
+2. `Guardrails`
+   - What should be checked before coding
+   - Which implementation patterns exist to prevent repeated mistakes
 
 3. `Troubleshooting`
    - How to record mistakes, regressions, symptoms, and fixes
@@ -71,7 +71,7 @@ This repository supports four layers:
    - How to review drift between docs and code
    - How to inspect rule violations, dead code, stale docs, and unused assets
 
-## Strong Rule Boundary
+## Guardrail Boundary
 
 Use `learning` for generalized technical understanding.
 
@@ -82,7 +82,7 @@ Use `troubleshooting` for concrete incidents:
 - runtime errors
 - confusing or misleading UX states
 
-Use `strong rules` when either of these is true:
+Use `guardrails` when either of these is true:
 
 - the user explicitly says “do not do this again”
 - a mistake has already repeated or is expensive enough that repetition is unacceptable

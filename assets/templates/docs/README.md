@@ -25,6 +25,6 @@ When this harness is installed into a repository, the preferred start order is:
 3. `docs/issues/current_backlog.md`
 4. the issue doc for the current task
 5. `docs/operations/agent_session_boot_protocol.md`
-6. `docs/operations/strong_rules.md`
+6. `docs/operations/guardrails.md`
 7. `docs/troubleshooting/README.md`
 8. `docs/playbooks/repo_hygiene_gc_loop.md`

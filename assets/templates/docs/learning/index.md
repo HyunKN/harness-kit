@@ -11,4 +11,4 @@ Learning notes should explain:
 Do not use this folder for simple feature announcements.
 Do not use this folder as the primary home for raw incidents or user-reported breakage.
 
-Use `troubleshooting/` for concrete failures and `operations/strong_rules.md` for non-negotiable prevention rules.
+Use `troubleshooting/` for concrete failures and `operations/guardrails.md` for non-negotiable prevention rules.

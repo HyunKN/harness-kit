@@ -25,7 +25,7 @@ Examples:
   - generalized technical explanation
 - `troubleshooting/`
   - concrete incident history
-- `operations/strong_rules.md`
+- `operations/guardrails.md`
   - recurring or non-negotiable prevention rules
 
 ## Why This Folder Exists

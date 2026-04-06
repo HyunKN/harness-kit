@@ -10,5 +10,5 @@ Use this folder for:
 Recommended starter docs:
 
 - `agent_session_boot_protocol.md`
-- `strong_rules.md`
+- `guardrails.md`
 - project workflow guide(s)
