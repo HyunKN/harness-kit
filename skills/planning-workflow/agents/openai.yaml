@@ -1,0 +1,3 @@
+interface:
+  display_name: "Planning Workflow"
+  short_description: "Break larger work into bounded tasks with validation checkpoints."

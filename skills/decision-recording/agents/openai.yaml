@@ -1,0 +1,3 @@
+interface:
+  display_name: "Decision Recording"
+  short_description: "Capture high-impact engineering decisions in durable records."

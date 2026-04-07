@@ -17,6 +17,12 @@ State the intended outcome.
 - in scope
 - out of scope
 
+## Linked Docs
+
+- spec or product note
+- decision record
+- review or troubleshooting note
+
 ## Affected Paths
 
 - path/to/file
