@@ -147,3 +147,7 @@ Harness Kit은 Markdown 중심으로 워크플로를 정의합니다.
 
 Harness Kit은 먼저 루프를 문서로 정리하는 역할을 합니다.  
 실제 강제는 대상 저장소에서 추가하면 됩니다.
+
+## 라이선스
+
+이 저장소는 [MIT License](./LICENSE)로 배포됩니다.

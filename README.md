@@ -140,3 +140,7 @@ But fully automatic enforcement still requires executable tooling in the target 
 
 Use Harness Kit to define the loop first.  
 Then add scripts, lint, CI, or validators in the target repo if you want hard enforcement.
+
+## License
+
+This repository is licensed under the [MIT License](./LICENSE).
