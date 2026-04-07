@@ -1,7 +1,7 @@
 {
   "name": "harness-kit",
   "version": "0.1.0",
-  "description": "Reusable Codex workflow harness with docs templates, issue-first execution rules, technical learning notes, and sub-agent playbooks.",
+  "description": "Reusable Codex workflow harness with docs templates, spec-first and issue-first execution rules, decision records, review notes, troubleshooting capture, technical learning notes, and sub-agent playbooks.",
   "author": {
     "name": "HyunKN",
     "email": "",
@@ -20,8 +20,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Harness Kit",
-    "shortDescription": "Reusable Codex docs harness, issue workflow, learning-note, and sub-agent skills.",
-    "longDescription": "A reusable Codex plugin for bootstrapping project docs, tracking implementation through issue docs, writing technical learning notes, and using sub-agents in a disciplined way.",
+    "shortDescription": "Reusable Codex docs harness with spec, planning, issue, review, troubleshooting, and learning workflows.",
+    "longDescription": "A reusable Codex plugin for bootstrapping project docs, clarifying scope with lightweight specs, tracking implementation through issue docs, capturing decisions and incidents, writing review and learning notes, and using sub-agents in a disciplined way.",
     "developerName": "HyunKN",
     "category": "Productivity",
     "capabilities": [
@@ -33,8 +33,9 @@
     "termsOfServiceURL": "https://github.com/HyunKN/harness-kit",
     "defaultPrompt": [
       "Bootstrap this repository with the harness docs templates.",
+      "Write a short spec and implementation plan for this repository change.",
       "Set up an issue-driven implementation workflow for this repo.",
-      "Write a technical learning note from this implementation."
+      "Capture the review, troubleshooting, and learning notes for this implementation."
     ],
     "brandColor": "#1f6feb"
   }

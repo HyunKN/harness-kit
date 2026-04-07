@@ -6,3 +6,5 @@ Use this folder for:
 - architecture reviews
 - external tool evaluations
 - audit notes
+
+Use `review-template.md` when a review should be durable enough for the next contributor to read without reconstructing the context.

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Spec Writing"
+  short_description: "Write short working specs before issue creation or implementation."

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Troubleshooting Workflow"
+  short_description: "Debug failures systematically and leave durable incident notes."

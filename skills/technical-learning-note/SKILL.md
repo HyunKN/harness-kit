@@ -7,6 +7,8 @@ description: Use when a repository keeps technical learning notes and the output
 
 Write learning notes that help a future reader understand how something works technically.
 
+This skill is for mechanism and tradeoff understanding, not decision logging or issue tracking.
+
 ## Required qualities
 
 - explain the mechanism, not just the user-visible feature
@@ -35,3 +37,4 @@ Write learning notes that help a future reader understand how something works te
 ## Resources
 
 - See `references/note-rubric.md` for the quality bar.
+- Use `decision-recording` when the main value is why a durable choice was made, and `issue-driven-workflow` when the note is really task status.

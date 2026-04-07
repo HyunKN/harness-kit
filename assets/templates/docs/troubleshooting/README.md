@@ -33,3 +33,5 @@ Examples:
 Many projects lose failure history because incidents stay only in chat or commit diffs.
 
 This folder keeps that history durable enough for another Codex user to reuse.
+
+Use `incident-template.md` when an incident deserves a standalone note instead of a short mention in the issue doc.
