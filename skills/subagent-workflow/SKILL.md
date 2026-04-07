@@ -7,6 +7,8 @@ description: Use when Codex sub-agents should be applied in a disciplined way fo
 
 Use sub-agents only when work naturally divides into roles and the main agent can still integrate the result safely.
 
+This skill is about staffing and ownership, not about replacing the spec, planning, issue, or review workflows themselves.
+
 ## Good candidates
 
 - analysis -> implementation -> review
@@ -47,3 +49,4 @@ Use sub-agents only when work naturally divides into roles and the main agent ca
 ## Resources
 
 - See `references/subagent-patterns.md` for recommended split patterns.
+- Use `planning-workflow` to decide the task breakdown first and `review-workflow` to define what a review should actually check.

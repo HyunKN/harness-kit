@@ -7,6 +7,8 @@ description: Use when a repository should capture a high-impact engineering deci
 
 Capture the why behind non-trivial engineering choices so later work does not depend on memory.
 
+This skill is for durable decision rationale, not implementation walkthroughs.
+
 ## Default flow
 
 1. Confirm the decision is real, accepted, and worth keeping.
@@ -32,3 +34,4 @@ Capture the why behind non-trivial engineering choices so later work does not de
 ## Resources
 
 - See `references/decision-checklist.md` for the minimum record contents.
+- Use `technical-learning-note` for how the implementation works and `issue-driven-workflow` for task-local execution state.

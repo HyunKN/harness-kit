@@ -1,6 +1,6 @@
 ---
 name: review-workflow
-description: Use when a change should receive a structured review before merge, handoff, or closure and the findings should be captured in `docs/reviews` or the issue doc. Trigger for non-trivial code changes, architecture changes, risky bug fixes, or external-tool evaluations.
+description: Use when a change should receive a structured review before merge, handoff, or closure and the findings should be captured in `docs/reviews` or the issue doc. Trigger for non-trivial code changes, architecture changes, risky bug fixes, or external-tool evaluations. This skill defines review content and findings, not whether sub-agents should be used to perform the review.
 ---
 
 # Review Workflow
@@ -37,3 +37,4 @@ Run meaningful changes through a repeatable review instead of relying on scatter
 ## Resources
 
 - See `references/review-lenses.md` for a short review checklist.
+- Use `subagent-workflow` only if the review should be delegated or split across roles.
