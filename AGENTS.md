@@ -51,6 +51,50 @@ Then open only the specific template or README that matches the task.
 - Do not promise automatic enforcement if the mechanism is only documented
 - Do not mix project-specific product rules into generic harness documents
 
+## Agent Teaming
+
+Do not default to one serial agent when a task can be split safely and usefully.
+
+At the same time, do not split work just because a task is large. Stay local first until scope, affected paths, and validation are clear enough that delegation will reduce risk instead of creating guesswork.
+
+When delegation is justified, prefer a small role-based agent team:
+
+1. `main agent`
+   - owns the plan
+   - decides whether delegation is justified
+   - assigns role boundaries and write ownership
+   - integrates results
+   - resolves conflicts
+   - performs final verification
+2. `analysis / research agent`
+   - maps files
+   - identifies risks
+   - gathers evidence
+3. `implementation agent`
+   - edits only its assigned write scope
+   - reports exact changes
+4. `review / verification agent`
+   - stays read-only and independent
+   - checks regressions
+   - checks missing tests
+   - checks evidence and completion claims
+5. `writer / ops agent` when relevant
+   - updates docs, notes, playbooks, or run procedures
+
+Default behavior:
+
+- Prefer the lightest execution mode that preserves quality:
+  - local first
+  - then bounded delegation
+  - then multi-agent team composition when parallel lanes materially improve speed, safety, or coverage
+- For non-trivial work, prefer specialist sub-agents once scope, validation, and ownership are clear enough to split safely.
+- Parallelize only when write scopes do not overlap and the lanes are behaviorally independent or connected by an agreed interface.
+- Different files do not automatically make parallelism safe; dependency chains and shared behavior still matter.
+- Do not let delegation widen authority. Protected files, human-approved-only files, and issue-level scope locks still apply.
+- Do not spawn role labels without a concrete question, artifact, or file ownership boundary.
+- The main agent must never offload final judgment, final integration, or final validation.
+- If sub-agents are used, record enough evidence that another agent can understand what was delegated, what changed, and what was validated.
+
 ## Core Operating Model
 
 This repository supports four layers:

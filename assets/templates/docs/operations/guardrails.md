@@ -59,6 +59,31 @@ Validation:
 - Search for duplicated fallback chains before finishing the task.
 ```
 
+## Rule: Do not default to single-agent serial work for non-trivial tasks
+
+Why:
+- Complex work is safer and faster when analysis, implementation, review, verification, and docs are split by role.
+- Keeping everything in one agent by habit makes it easier to miss evidence, regressions, and completion gaps.
+
+Do instead:
+- Prefer the lightest execution mode that preserves quality:
+  - local first
+  - then bounded delegation
+  - then multi-agent team composition when parallel lanes materially improve speed, safety, or coverage
+- Default to a small specialist agent team only after scope, affected paths, and validation are clear enough that the split will reduce risk instead of creating guesswork.
+- Keep ownership explicit:
+  - main agent for planning, integration, and final judgment
+  - analysis / research agent for evidence and file mapping
+  - implementation agent for bounded code changes
+  - review / verification agent for read-only regression and completion checks
+  - writer / ops agent when docs or run procedures change
+- Parallelize only when write scopes do not overlap and the lanes are behaviorally independent or joined by an agreed interface.
+- Delegation does not widen authority. Protected paths, human-approved-only files, and issue-level scope locks still apply to every sub-agent.
+
+Validation:
+- Before doing substantial work, state the role split or explicitly justify why the task stays local.
+- After delegated work, confirm who changed what, what stayed read-only, and what validation was performed.
+
 ## Manual / Automatic Boundary
 
 This document can guide Codex behavior because `AGENTS.md` can tell the agent to read it first.
